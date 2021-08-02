@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Anime Starter Pack</string>
+    //Main activity
+    <string name="txtMainPB">0%</string>
+    <string name="txtMovies">Movies</string>
+    <string name="txtSeries">Series</string>
+    <string name="btnIntroduction">Introduction</string>
+    <string name="btnSettings">Settings</string>
+    <string name="btnAbut">About</string>
+    <string name="txtAuthor">Developed by : Rich Coding</string>
+
+    //Settings, About and Introduction Activity
+    <string name="btnLanguageChange">Change Language</string>
+    <string name="btnDatabaseSetup">Setup/Reset your Database</string>
+    <string name="step1">Before you use “Anime Starting Pack” for the first time, a list of the shows needs to be created. All it takes is just one click of the button. Click on the SETUP/RESET YOUR DATABASE in SETTINGS and click ok.</string>
+    <string name="step2">Unless you want to reset all your progress through the shows in the future, this will be the only time using this button.</string>
+    <string name="step3">Now all your recommended movies and series are set up and you can browse through the content. All the shows are preselected as “Not Watched Yet”.</string>
+    <string name="step4">After you choose and watch the show, just click either on the heart if you liked it, or the dissatisfied emoji if you didn’t. Either way, this show will now be showing on your progress bars so you can easily track how far through the content you are.  </string>
+    <string name="about">Anime Starter Pack have not been created only for fans that are starting with anime and looking for an inspiration. Here, even experienced “Otakus” can find useful tips for the new content, or at least enjoy the satisfaction of flying through the progress bars. Hand-picked movies and series in this app are pure jewels at their genre and after going through just few of them, you will end up hooked up on anime for life. Enjoy and have fun!</string>
+
+    //PupUps
+    <string name="popup1">Arigato!</string>
+    <string name="popup2">Arigato gozaimasu!</string>
+    <string name="popup3">Hai  Hai</string>
+    <string name="popup4">Baka !</string>
+    <string name="popup5">Nandayo?</string>
+    <string name="popup6">Nani ? !</string>
+
+</resources>

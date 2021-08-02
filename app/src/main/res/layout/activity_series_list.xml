@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:fillViewport="true"
+    tools:context=".SeriesListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+
+        <RelativeLayout
+            android:id="@+id/rlSeriesListsAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgSeriesListsAction"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/action_series" />
+
+            <TextView
+                android:id="@+id/txtSeriesListAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbSeriesListsAction"
+                android:text="Action"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbSeriesListsAction"
+                android:layout_below="@+id/imgSeriesListsAction"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSeriesListsSciFi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlSeriesListsAction"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgSeriesListsSciFi"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/scifi_series"/>
+
+            <TextView
+                android:id="@+id/txtSeriesListsSciFi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbSeriesListsSciFi"
+                android:text="Sci - Fi"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbSeriesListsSciFi"
+                android:layout_below="@+id/imgSeriesListsSciFi"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSeriesListsFantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlSeriesListsSciFi"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgSeriesListsFantasy"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/fantasy_series"/>
+
+            <TextView
+                android:id="@+id/txtSeriesListsFantasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbSeriesListsFantasy"
+                android:text="Fantasy"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbSeriesListsFantasy"
+                android:layout_below="@+id/imgSeriesListsFantasy"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSeriesListsDrama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlSeriesListsFantasy"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgSeriesListsDrama"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/drama_series"/>
+
+            <TextView
+                android:id="@+id/txtSeriesListsDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbSeriesListsDrama"
+                android:text="Drama"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbSeriesListsDrama"
+                android:layout_below="@+id/imgSeriesListsDrama"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSeriesListsRomantic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@+id/rlSeriesListsDrama"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgSeriesListsRomantic"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/romantic_series"/>
+
+            <TextView
+                android:id="@+id/txtSeriesListsRomantic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbSeriesListsRomantic"
+                android:text="Romantic"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbSeriesListsRomantic"
+                android:layout_below="@+id/imgSeriesListsRomantic"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

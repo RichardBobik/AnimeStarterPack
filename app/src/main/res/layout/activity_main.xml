@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/orange"
+    >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="@string/app_name"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbMain"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:progress="60" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnMovies"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/movies"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbMain"
+        app:shapeAppearanceOverlay="@style/roundImgView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnSeries"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/series"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnMovies"
+        app:layout_constraintTop_toBottomOf="@+id/pbMain"
+        app:shapeAppearanceOverlay="@style/roundImgView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMovies"
+        app:layout_constraintEnd_toEndOf="@+id/btnMovies"
+        app:layout_constraintStart_toStartOf="@+id/btnMovies"
+        app:layout_constraintTop_toBottomOf="@+id/btnMovies" />
+
+    <TextView
+        android:id="@+id/txtSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSeries"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeries"
+        app:layout_constraintStart_toStartOf="@+id/btnSeries"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeries" />
+
+    <Button
+        android:id="@+id/btnIntroduction"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnIntroduction"
+        app:layout_constraintEnd_toEndOf="@+id/txtSeries"
+        app:layout_constraintStart_toStartOf="@+id/txtMovies"
+        app:layout_constraintTop_toBottomOf="@+id/btnMovies" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnSettings"
+        app:layout_constraintEnd_toEndOf="@+id/btnIntroduction"
+        app:layout_constraintStart_toStartOf="@+id/btnIntroduction"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntroduction"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnAbut"
+        app:layout_constraintEnd_toEndOf="@+id/btnSettings"
+        app:layout_constraintStart_toStartOf="@+id/btnSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txtAuthor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMainPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMainPB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/pbMain"
+        app:layout_constraintEnd_toEndOf="@+id/pbMain"
+        app:layout_constraintStart_toStartOf="@+id/pbMain"
+        app:layout_constraintTop_toTopOf="@+id/pbMain" />
+</androidx.constraintlayout.widget.ConstraintLayout>

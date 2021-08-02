@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:fillViewport="true"
+    tools:context=".IntroductionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/app_name"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txtStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="@string/step1"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setup"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtStep1"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/step2"
+            android:layout_below="@+id/imgSetup"
+            android:textColor="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txtStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/step3"
+            android:layout_below="@+id/txtStep2"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgViewedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/viewed_status"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtStep3"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtStep4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/step4"
+            android:layout_below="@+id/imgViewedStatus"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtStep4"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+    </RelativeLayout>
+</ScrollView>

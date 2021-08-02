@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sk.richardbobik.animestarterpack" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/anime_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/anime_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnimeStarterPack" >
+        <activity android:name=".AboutActivity" >
+        </activity>
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".SeriesRomanticActivity" />
+        <activity android:name=".SeriesDramaActivity" />
+        <activity android:name=".SeriesFantasyActivity" />
+        <activity android:name=".SeriesSciFiActivity" />
+        <activity android:name=".SeriesActionActivity" />
+        <activity android:name=".SeriesListActivity" />
+        <activity android:name=".MoviesDramaActivity" />
+        <activity android:name=".MoviesFamilyActivity" />
+        <activity android:name=".MoviesRomanticActivity" />
+        <activity android:name=".MoviesActionActivity" />
+        <activity android:name=".MoviesPostApocalypticActivity" />
+        <activity android:name=".MoviesListsActivity" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

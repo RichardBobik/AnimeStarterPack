@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:fillViewport="true"
+    tools:context=".MoviesListsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+
+        <RelativeLayout
+            android:id="@+id/rlMoviesListsPostApoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgMoviesListsPostApoc"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/post_apoc_movies"
+                />
+
+            <TextView
+                android:id="@+id/txtMoviesListsPostApoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbMoviesListsPostApoc"
+                android:text="Post Apocalyptic"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbMoviesListsPostApoc"
+                android:layout_below="@+id/imgMoviesListsPostApoc"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMoviesListsAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlMoviesListsPostApoc"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgMoviesListsAction"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/action_movies"/>
+
+            <TextView
+                android:id="@+id/txtMoviesListsAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbMoviesListsAction"
+                android:text="Action Movies"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbMoviesListsAction"
+                android:layout_below="@+id/imgMoviesListsAction"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMoviesRomantic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlMoviesListsAction"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgMoviesListsRomantic"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/romantic_movies"/>
+
+            <TextView
+                android:id="@+id/txtMoviesListsRomantic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbMoviesListsRomantic"
+                android:text="Romantic Movies"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbMoviesListsRomantic"
+                android:layout_below="@+id/imgMoviesListsRomantic"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMoviesFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rlMoviesRomantic"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgMoviesListsFamily"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/family_movies"/>
+
+            <TextView
+                android:id="@+id/txtMoviesListsFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbMoviesListsFamily"
+                android:text="Family Movies"
+                android:layout_centerHorizontal="true"/>
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbMoviesListsFamily"
+                android:layout_below="@+id/imgMoviesListsFamily"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMoviesDrama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@+id/rlMoviesFamily"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgMoviesListsDrama"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:src="@drawable/drama_movies"/>
+
+            <TextView
+                android:id="@+id/txtMoviesListsDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pbMoviesListsDrama"
+                android:text="Drama Movies"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pbMoviesListsDrama"
+                android:layout_below="@+id/imgMoviesListsDrama"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="40"
+                android:background="#00F44336"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
